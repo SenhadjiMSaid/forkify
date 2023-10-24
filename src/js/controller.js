@@ -110,6 +110,10 @@ async function controlAddRecipe(newRecipe) {
   }
 }
 
+function newFeature() {
+  console.log('Welcome to the application');
+}
+
 function init() {
   bookmarksView.addHandlerRender(controlBookmark);
   recipeView.addHandlerRender(controlRecipes);
@@ -118,7 +122,7 @@ function init() {
   searchView.addHandlerSearch(controlSerch);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUplad(controlAddRecipe);
-  console.log('Welcome!');
+  newFeature();
 }
 
 init();
